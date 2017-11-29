@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Vasil Kaptselau| Full-Stack Web Developer | Seattle, WA</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="author" content="Vasil Kaptselau">
+	<meta name="description" content="Vasil Kaptselau is innovative IT professional SEO, web design and web development.">
+	<meta name="keywords" content="UI design, Web design, Web developer">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="font/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="styles/animate.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="styles/menu.css" />
+    <link rel="stylesheet" href="styles/skills-container.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script type="text/javascript" src="js/functional.js"></script>
+    <script type="text/javascript" src="js/tagcanvas.min.js"></script>
+    <script type="text/javascript" src="js/arrow-top.js"></script>
+    <script type="text/javascript">
+	 window.onload = function() {
+            try {
+                TagCanvas.Start('myCanvas', 'tags', {
+                    //shadow: "#dedee0",
+                    //shadowOffset: [3,3],
+                    shuffleTags: true,
+                    freezeActive: true,
+                    centreImage: 'images/html_logo2.svg',
+                    reverse: true,
+                    depth: 0.5,
+                    maxSpeed: 0.03,
+                    shape: "vring(0.5)",
+                    offsetY: 0,
+                    lock: "y"
+
+                });
+            } catch (e) {
+                // something went wrong, hide the canvas container
+                document.getElementById('myCanvasContainer').style.display = 'none';
+            }
+
+        };
+    </script>
+    
+    <link rel="icon" type="image/png" href="Images/favicon.png">
+	
+</head>
+
+<body>
+    <div class="parallax nyc hero parallaxis" id="home" data-parallax-speed="1.1">
+
+        <div class="MyLogo">
+            
+           
+            <!--MENU-->
+            <nav class="menu">
+				 <div class="title">
+					<h1>Vasil Kaptselau</h1>
+					<p>Web portfolio</p>
+				</div>
+                <input type="checkbox" class="menu-open" name="menu-open" id="menu-open" />
+                <label class="menu-open-button" for="menu-open">
+					
+                    <span class="hamburger hamburger-1"></span>
+                    <span class="hamburger hamburger-2"></span>
+                    <span class="hamburger hamburger-3"></span>
+                </label>
+				
+                <a href="#contact" class="menu-item menu-right-second"> <i class="fa fa-envelope"></i> </a>
+                <a href="#" class="menu-item menu-right-third"> <i class="fa fa-briefcase"></i> </a>
+                <a href="#mySkills" class="menu-item menu-right-four"> <i class="fa fa-user"></i> </a>
+                <a href="#home" class="menu-item menu-right-five"> <i class="fa fa-home"></i> </a>
+				<a href="https://vasilkaptselau.github.io/portfolio/index.html" class="menu-right-first">
+					 <img id="logo" class=" flipInY" src="images/vk.png" alt="Logo VK Design">
+				</a>
+            </nav>
+        </div>
+
+        <!-- filters -->
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="shadowed-goo">
+        
+                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                    <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                    <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+                    <feColorMatrix in="shadow" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+                    <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+                    <feComposite in2="shadow" in="goo" result="goo" />
+                    <feComposite in2="goo" in="SourceGraphic" result="mix" />
+                </filter>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                    <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                    <feComposite in2="goo" in="SourceGraphic" result="mix" />
+                </filter>
+            </defs>
+        </svg>
+		
+        <div class="hero-content">
+            <div id="particles-js">
+                <canvas class="particles-js-canvas-el" width="1440" style="width: 100%; height: 100%;"></canvas>
+            </div>
+           
+        </div>
+        <a href="#intro" class="scroll-icon"></a>
+    </div>
+    
+    <div class="cleft-wrapper">
+        <div class="cleft-left"></div>
+        <div class="cleft-right"></div>
+    </div>
+
+    <div class="spacer" id="intro">
+        <div class="container intro">
+            <h1 class="caption hello">Welcome to my web portfolio!</h1>
+      <span class="caption occupation">
+        I'm a web developer from Seattle, WA.
+      </span>
+      <span class="caption past">
+        <!--My recently projects <a href="http://www.unisonschool.us" target="_blank">Unison Music School</a>,
+        <a href="https://k2ship.com/" target="_blank">K&K</a>,
+         &amp;
+        <a href="http://thegermanautohaus.com/" target="_blank">German AutoHaus</a>.-->
+		Coding and learning a new technologies it's my best side a new life in a new country. 
+      </span>
+      <span class="caption current">
+        I'm actively seeking a new opportunity for full-time work. 
+      </span>
+        </div>
+    </div>
+
+    <div class="carrotBox">
+        <div class="carrot"></div>
+    </div>
+
+    <div class="parallax paris" data-parallax-speed="1.1">
+        <div class="parallax-content">
+            <h1>My fresh skills</h1>
+            <p>scroll down</p>
+			<a href="#mySkills" class="scroll_second"></a>
+        </div>
+		
+    </div>
+
+    <div class="cleft-wrapper">
+        <div class="cleft-left"></div>
+        <div class="cleft-right"></div>
+    </div>
+
+    <div class="spacer tallSpacer" id="mySkills" style="display: flex;">
+
+        <div class="large-window" style="flex:1;">
+            <div class="window-tint">
+                <div class="promo-text">Fall Suits<strong><span>from</span> $99</strong><a href="" class="window-cta">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="flex:1;">
+            <div id="myCanvasContainer">
+                <canvas id="myCanvas" width="500" height="500">
+                    <p>Anything in here will be replaced on browsers that support the canvas element</p>
+                </canvas>
+            </div>
+            <div id="tag">
+                <ul id="tags">
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank"><img src="images/css3.png" alt="CSS">
+                        </a>
+                    </li>
+                    <li class="tage">
+                        <a href="https://en.wikipedia.org/wiki/Git" target="_blank"><img src="images/git.png" alt="Git">
+                        </a>
+                    </li>
+                    <li class="tage">
+                        <a href="https://en.wikipedia.org/wiki/AngularJS" target="_blank"><img src="images/angular.png" alt="Angular">
+                        </a>
+                    </li>
+                    <li class="tage">
+                        <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" target="_blank"><img src="images/bootstrap.png" alt="Bootstrap">
+                        </a>
+                    </li>
+                    <li class="tage">
+                        <a href="https://bower.io/" target="_blank"><img src="images/bower.png" alt="Bower">
+                        </a>
+                    </li>
+                    <li class="tage">
+                        <a href="https://github.com/vasilkaptselau" target="_blank"><img src="images/github.png" alt="GitHub">
+                        </a>
+                    </li>
+                    <li class="tage">
+                        <a href="https://gruntjs.com/" target="_blank"><img src="images/gruntlogo.png" alt="Grunt">
+                        </a>
+                    </li>
+                    <li class="tage">
+                        <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"><img src="images/javascript.png" alt="JS">
+                        </a>
+                    </li>
+                    <li class="tage">
+                        <a href="https://en.wikipedia.org/wiki/MySQL" target="_blank"><img src="images/mysql.png" alt="MySQL">
+                        </a>
+                    </li>
+                    <li class="tage">
+                        <a href="https://en.wikipedia.org/wiki/Node.js" target="_blank"><img src="images/nodejs.png" alt="Node">
+                        </a>
+                    </li>
+                    <li class="tage">
+                        <a href="https://www.npmjs.com/" target="_blank"><img src="images/npm.png" alt="NPM">
+                        </a>
+                    </li>
+                    <li class="tage">
+                        <a href="https://en.wikipedia.org/wiki/PHP" target="_blank"><img src="images/php.png" alt="PHP">
+                        </a>
+                    </li>
+                    <li class="tage">
+                        <a href="https://reactjs.org/" target="_blank"><img src="images/react.png" alt="React">
+                        </a>
+                    </li>
+                    <li class="tage">
+                        <a href="https://en.wikipedia.org/wiki/Sass_(stylesheet_language)" target="_blank"><img src="images/sass.png" alt="Sass">
+                        </a>
+                    </li>
+                    <li class="tage">
+                        <a href="https://www.visualstudio.com/" target="_blank"><img src="images/vs.png" alt="VS">
+                        </a>
+                    </li>
+                    <li class="tage">
+                        <a href="https://en.wikipedia.org/wiki/WordPress" target="_blank"><img src="images/wordpress.png" alt="Wordpress">
+                        </a>
+                    </li>
+                    <li class="tage">
+                        <a href="http://www.adobe.com/products/photoshop.html" target="_blank"><img src="images/photoshop.png" alt="photoshop">
+                        </a>
+                    </li>
+                    <li class="tage">
+                        <a href="http://www.adobe.com/products/dreamweaver.html" target="_blank"><img src="images/dream.png" alt="DreamWeaver">
+                        </a>
+                    </li>
+                    <li class="tage">
+                        <a href="http://www.adobe.com/products/illustrator.html" target="_blank"><img src="images/illustrator.png" alt="Illustrator">
+                        </a>
+                    </li>
+                    <li class="tage">
+                        <a href="https://www.microsoft.com/en-us/sql-server/sql-server-2016" target="_blank"><img src="images/sqlServer.png" alt="SQL">
+                        </a>
+                    </li>
+                    <li class="tage">
+                        <a href="https://greensock.com/" target="_blank"><img src="images/greenSock.png" alt="GreenSock">
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+		
+    </div>
+	<div class="parallax" id="before_expirence"  data-parallax-speed="0.9">
+		<div class="under_skills parallax-content">
+			<h1>New technologies</h1>
+				<p>are coming soon</p>
+				
+		</div>
+	</div>
+    <div class="carrotBox">
+        <div class="carrot"></div>
+    </div>
+
+    <div class="parallax madrid" data-parallax-speed="0.9">
+        <div class="parallax-content">
+            <h1>recently projects</h1>
+            <p></p>
+		</div>
+
+    </div>
+
+    <div class="cleft-wrapper">
+        <div class="cleft-left"></div>
+        <div class="cleft-right"></div>
+    </div>
+
+    <div class="spacer centered" id="slide">
+		<!--SlideShow Projects-->
+		<div class="container_slideshow">
+			
+			<figure class='photo'>
+					<img src="images/first.png" alt="" />
+				<figcaption>
+					<a href="http://www.unisonschool.us" target="_blank">
+						<h5>Mountain Landscapes</h5>
+					</a>
+				</figcaption>
+				
+			</figure>
+			
+			
+			
+			<figure class='photo'>
+				<img src="images/five.png" alt="" />
+				<figcaption>Second</figcaption>
+			</figure>
+			<figure class='photo'>
+				<img src="images/second.png" alt="" />
+				<figcaption>Third</figcaption>
+			</figure>
+			<figure class='photo'>
+				<img  src="images/first.png" alt="" />
+				<figcaption>Fourth</figcaption>
+			</figure>
+			<figure class='photo'>
+				<img  src="images/five.png" alt="" />
+				<figcaption>Five</figcaption>
+			</figure>
+			
+
+        </div>
+		<div id="button_contact">
+			<p>Let's start to build together.</p>
+			<button onclick="location.href='mailto:vasilkaptselau@gmail.com';">Contact Me &raquo;</button>
+		</div>
+        
+        
+    </div>
+
+    <div class="carrotBox">
+        <div class="carrot"></div>
+    </div>
+
+    <div class="parallax nyc mount" data-parallax-speed="0.95">
+        <div class="parallax-content">
+        <h1 class="exp">My expirences</h1>
+		</div>
+     <section class="skills-container">
+	
+		   <!-- HTML Chart -->
+            <figure class="chart">
+                <figcaption>design</figcaption>
+                <!--<img class="html" src="https://dl.dropboxusercontent.com/s/68gv23q4y5qyq52/html5.svg">-->
+                <svg width="200" height="200">
+                    <circle class="outer outer1" cx="90" cy="100" r="70" transform="rotate(-90, 95, 95)" />
+                </svg>
+            </figure>
+
+            <!-- CSS Chart -->
+            <figure class="chart">
+                <figcaption style="padding-left: 35px;">development</figcaption>
+                <!--<img class="css" src="https://dl.dropboxusercontent.com/s/gftbpqje9h2jvlv/css3.svg">-->
+                <svg width="200" height="200">
+                    <circle class="outer outer2 " cx="90" cy="100" r="70" transform="rotate(-90, 95, 95)" />
+                </svg>
+            </figure>
+
+
+            <!-- Javascript Chart -->
+            <figure class="chart">
+                <figcaption>SEO</figcaption>
+                <!--<img class="javascript" src="https://dl.dropboxusercontent.com/s/jsp3rsberc4q650/javascript.svg">-->
+                <svg width="200" height="200">
+                    <circle class="outer outer3" cx="90" cy="100" r="90" transform="rotate(-90, 95, 95)" />
+                </svg>
+            </figure>
+
+            <!-- Node.js Chart -->
+            <figure class="chart">
+                <figcaption>Node</figcaption>
+                <!--<img class="node" src="https://dl.dropboxusercontent.com/s/v28zws1p38tjph2/node.png">-->
+                <svg width="200" height="200">
+                    <circle class="outer outer4" cx="90" cy="100" r="90" transform="rotate(-90, 95, 95)" />
+                </svg>
+            </figure>
+
+        </section>
+
+    </div>
+    
+    <div class="cleft-wrapper">
+        <div class="cleft-left"></div>
+        <div class="cleft-right"></div>
+    </div>
+
+    <div class="spacer">
+        <div class="container">
+
+            <h3>Is this the end?</h3>
+            <p>Mauris condimentum porttitor massa molestie elementum. Proin rhoncus, arcu sit amet molestie dignissim, sapien risus mattis arcu, et fringilla ipsum purus vitae neque. Phasellus ultricies dolor libero, at efficitur nulla tincidunt eget. Donec eget mauris nec libero vestibulum porta. Aenean sit amet turpis vehicula, vestibulum nunc sed, dapibus ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lobortis tincidunt iaculis. Aenean et odio eros. Aenean fermentum mi ac maximus sollicitudin. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam posuere, est id varius posuere, dolor nisi interdum ante, eget consequat ante mi non ex. Mauris bibendum ac diam vitae efficitur.</p>
+            <p>Mauris condimentum porttitor massa molestie elementum. Proin rhoncus, arcu sit amet molestie dignissim, sapien risus mattis arcu, et fringilla ipsum purus vitae neque. Phasellus ultricies dolor libero, at efficitur nulla tincidunt eget. Donec eget mauris nec libero vestibulum porta. Aenean sit amet turpis vehicula, vestibulum nunc sed, dapibus ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lobortis tincidunt iaculis. Aenean et odio eros. Aenean fermentum mi ac maximus sollicitudin. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam posuere, est id varius posuere, dolor nisi interdum ante, eget consequat ante mi non ex. Mauris bibendum ac diam vitae efficitur.</p>
+            <p>Mauris condimentum porttitor massa molestie elementum. Proin rhoncus, arcu sit amet molestie dignissim, sapien risus mattis arcu, et fringilla ipsum purus vitae neque. Phasellus ultricies dolor libero, at efficitur nulla tincidunt eget. Donec eget mauris nec libero vestibulum porta. Aenean sit amet turpis vehicula, vestibulum nunc sed, dapibus ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lobortis tincidunt iaculis. Aenean et odio eros. Aenean fermentum mi ac maximus sollicitudin. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam posuere, est id varius posuere, dolor nisi interdum ante, eget consequat ante mi non ex. Mauris bibendum ac diam vitae efficitur.</p>
+            <p>Mauris condimentum porttitor massa molestie elementum. Proin rhoncus, arcu sit amet molestie dignissim, sapien risus mattis arcu, et fringilla ipsum purus vitae neque. Phasellus ultricies dolor libero, at efficitur nulla tincidunt eget. Donec eget mauris nec libero vestibulum porta. Aenean sit amet turpis vehicula, vestibulum nunc sed, dapibus ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lobortis tincidunt iaculis. Aenean et odio eros. Aenean fermentum mi ac maximus sollicitudin. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam posuere, est id varius posuere, dolor nisi interdum ante, eget consequat ante mi non ex. Mauris bibendum ac diam vitae efficitur.</p>
+            <p>Mauris condimentum porttitor massa molestie elementum. Proin rhoncus, arcu sit amet molestie dignissim, sapien risus mattis arcu, et fringilla ipsum purus vitae neque. Phasellus ultricies dolor libero, at efficitur nulla tincidunt eget. Donec eget mauris nec libero vestibulum porta. Aenean sit amet turpis vehicula, vestibulum nunc sed, dapibus ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lobortis tincidunt iaculis. Aenean et odio eros. Aenean fermentum mi ac maximus sollicitudin. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam posuere, est id varius posuere, dolor nisi interdum ante, eget consequat ante mi non ex. Mauris bibendum ac diam vitae efficitur.</p>
+            <p>Mauris condimentum porttitor massa molestie elementum. Proin rhoncus, arcu sit amet molestie dignissim, sapien risus mattis arcu, et fringilla ipsum purus vitae neque. Phasellus ultricies dolor libero, at efficitur nulla tincidunt eget. Donec eget mauris nec libero vestibulum porta. Aenean sit amet turpis vehicula, vestibulum nunc sed, dapibus ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lobortis tincidunt iaculis. Aenean et odio eros. Aenean fermentum mi ac maximus sollicitudin. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam posuere, est id varius posuere, dolor nisi interdum ante, eget consequat ante mi non ex. Mauris bibendum ac diam vitae efficitur.</p>
+        </div>
+    </div>
+    <footer id="contact" class="footer-container social-media">
+		<div id="empty_footer_left" >
+			
+			<div class="page-section section-dark section-center ">
+		
+			
+
+			<div class="location-map location-map-lg">
+				<div class="location-container">
+					<div class="location location-seattle animate zoomIn" style="visibility: visible; animation-name: zoomIn;">
+						<img id="usa_map" src="images/map.svg" alt="USA map">
+						<span class="location-name">
+							<span>Seattle</span>
+						</span>
+						<span class="location-pin"></span>
+					</div>
+					
+					<div class="map"></div>
+				</div>
+				
+			</div>
+		
+	</div>
+		</div>
+		<div id="footer_center">
+			<h2>Before you go</h2>
+			<h4>Follow me maybe?</h4>
+			<!-- LinkedIn icon by Icons8 -->
+			<a href="https://www.linkedin.com/in/vasil-kaptselau" target="_blank">
+				<img class="icon icons8-LinkedIn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACQUlEQVRoQ+1Zz0sbQRh9s2JVcrAUqoKYFnKuK0JPHpIm/QO81ovSf0D0orlI9BJzae2tN38c4rFevGnYQHt3kxxEFEqkBz1UBAMqdKdMcEWTnUxWdrM7OHv9Pmbe+977Zpb5CCT/iOT4oQgEraBSIPwK5EqThFqzBCTRSbAU1KBE+4aF0Z1W+7a0kLZ6sA6QmU4Cb9qLYtlK6xkeBj6BXGlSo/RHoODvNreo9gHpd4YTFi4BkjUNQhAPAwFKUaRp3dHCXALaqknDAN7GYC3qjlifHwF9oBdfUsNIRCMwqjXM7/+BeX7tu1ieKVCYiiE+ErkHzEiktk/kIfBvYbQJbFeuJA+BRgWKpzUk8xIpwHrg68fhuo0Y+Lk9yXrAd69wNvCsiaUnIGpiXvxNfzeWJoYwNtiHsYHeeh3YCbZZ/outyoWwLp4p8BQC4+tHYM3/sqfLEejB+TWS+WNc3lhcIoES+H15i7f9L1pWWXSfBEpA6I+7hOT2CYrVmmN64ARWfp3BqF7VbTT7/vWj29xGvFm5wOfd0/ARYOCXf549AtZ4IbIgs1rs+2H4CLxaqzQ1aDwaQeFTrO3fkkAtxPtXEp1oD9kpAnY1RFUTxR9W1U2uUkAp4HA4KgsB/Od13rOKqGqiuGriBiu6fhcSVVgUD1yBdv8svc7z7B7wGli767kmIP3jLmR/XmfSallzAwTT7crsS96TBxw2mmw5QWBlOj0rqM8EoGV4gw0bnppS+mIbF4sqBVwUy5dUpYAvZXWx6H+KpYVA1gC++wAAAABJRU5ErkJggg==" width="48" height="48" alt="LinkedIn">
+			</a>
+			<!-- GitHub icon by Icons8 -->
+			<a href="https://github.com/vasilkaptselau" target="_blank">
+				<img class="icon icons8-GitHub" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAEUklEQVR4Xu2aj5ENQRDG+yJABFwEiAARcBEgAkSACBABFwEiQASIABEgAup3tXM1tmanv96Z3dvytqteHfXmT/fXX/+ZmXdkBy5HB26/7QDsDDhwBPYQOHAC7ElwrRC4bGZ3zeyamd0e/vLvXL6bGZ+Pw9/3ZvZraYYuCQBG3zezB2Z2Y6YhX8zsjZmdLgXGEgDg2UeD4YDQQ2ACQLwa2NFjzbM1egPw1Mwem1kvw8eGAsRLM3veC4FeAEDx1w1Uj9pDaJz0YEMPAIjxFwt6fQoc2PBkCI0ogOfjWwHAeDx/kfKwBYQWALZgfAJ+NghzAdiS8U0gzAGAhPfhAmLeCzNyws1oYpwDwOdKtr8zdHKAdG8oiZc8zZ3vfw+l752Zkf3pJHFASfgeEGSJAvDMzKj1JUHRcf3n//QF+RzGoSiSWt00D+BywKj31P1xS/ynYiFz0FOSCAB0eHh/qsn5NHintDFzMQ7D6fdroozlvHBrYpFQKEQAwBO0uFNSA0DyRmBQDQCWkVmgAoDXvzmJb0sAwIJj5QClAkAc0+3VhE2vBLzYMvSnUIWk3kAFoJb5kyGlJNhipAe2V12kiqAAAP1B3JNUAr1xPb6vlcJ8fRhZvVRRAFC6Pm5vqPtripcI0YUTI/3DpCgAeNmfxdf0fjIGwN86iLvVQAHAQ3rN2B/bC71rucCtTAoAlL/xBWauiLvJgnHhOYemi3LYFAK1tpOFtwwA+lWdrDBgB8Ch8H/PAOLoqgOCwqQlUoHHzh9O/pKuxb1Eg2EkGu+U1xsAEjMJuiYuOxXPKQBIfXdnBJQGrQsASiMESDRDawq3QrTENeEliYNcUxlUOi42WLMbVM8CXVph9TDE6QsQln7RRR+8rzy4djkM4V2Muy7wWzqCCutMDYkY/1UBSUmCKKMknKQ0IJAU08Vng73/TIX2vELV2vJ8gpSYVQBAnjKXHzw4AnPURDF+BzAWvuNJm3Etwg8rcEDkuC0f0FQAMGBcDfIXWuIRg6caJqoEH8DwmAGgGM2aXpafAtbN/mliBIASC0h4JD6MQmGMnDqe0pUxxkuS7MN6Xvc5ZTzeJ0y8fc7mRwBgfOlyNL+BreUKnrJhkSLKJezUOpF9wgCwaakzzG9eppTnycqjfzJKrfNjENzObzwhygDml6g+voeHxunXYBjNR6JkpqB30BnbAvXZUwV5VgjUPETGp/T0kigAEYad6ziHAWlyKd6JcWKwh0QAkGp+SakWAFivBAL9AmwgVyQhK/Nbv4ioAMw2HmVaAWAN4o4ewHupie7lATAr5nskwZIXSYzQf+rJeg7YNQDI9lSbUMJbIgTGa6IUP04osaEHA/A666v9hBtyUaXcBYdXW5QkP+RARPfKGYDh5BXWjZbTqs5RpRQA8jGAwAeqVm9mCgvjZUILw8kxXQ1P+y0NQBSw1cfvAKwO+cY23BmwMYesrs7OgNUh39iGOwM25pDV1fkLYHrdQd644qIAAAAASUVORK5CYII=" width="48" height="48" alt="GitHub">
+			</a>
+			<!-- Twitter icon by Icons8 -->
+			<a href="https://twitter.com/KaptselauVasil" target="_blank">
+				<img class="icon icons8-Twitter" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADTklEQVRoQ+1Y3VHbQBD+9kTMZCwGdxB3EFEBTgWBFwxPmAowFQAVxB3gPGH7BaeCKBXEqQDTAYwFCZm528yd+XGwJZ1OAoYZ6VXan+/bb/f2RHjjD73x/FECeO0KlhUoK5CTgVJCOQnMbf6yFTj9XRdC7gNoEBDo7BkYAQhVpXqMTbqcQzSIAmz5+puFTzqA00kDOythXqpE//qQwEdxfhh8SUQHcsvv4oxruL1Z98BtJlyopt9yA3DGNfE3OgfTUG37e64gRC86IUJsEv/5ZYQgNKbV4StV8esLK3NnlFyB00nDE/TdOGN0XUB4g6gFxklW8CZ5ogbeVcf4EwVxKkgEIPqTIwIdPgbnoaz4e0mMPE1U9KJzItSzAgB4CKYaE68ZIDF9kBGAqcRYMe9Z9cUgCjzGz+zJP1pI0Caa1aFbD8xIaN4BD6VaOsDO+3Gcc1f5POg/gfn7mMk9MG3iMYFW41nkoWTRxXb125x85iRoX4s05u0AABC9qEMEPbsTHzMGgZCZQiW8ESCvPD3rHRpYB5KKP9nINP0c0FW4vR4R4UMaiCLfFwOgf73hgVel8n4IkkMifCwyySRfkrCWdAJbSUj0ojYRvrxU0rNxZNNPVweQcqUsYAy6gGfGL7Xtm10p7UlF6fUnIUDraY6KfM/A16T9ZzZWKgC8QhVsR6gGkg4AQJ4DKWtlzA7UXKnZ2lkBMM5MJbjz3HJi8LFqrsSu3U+B2QPQ9wJviQXLDQLatgxl+c6wr5aCpPXEGcD8ZpolNbtvs7Jv3QMmvNVeZJfooq+YcaGWq0GWVT0bgLs+EMxh8nLnBsJ2dXCW0IPh9GJ+RMCuW6rzVi7Sufdi38RP4w6iQCj9d4EbIPrsCibLobUohjuA6aq9D2J97bSe27NJ5E0+ew/cRff60S4D7ft/Oy7s55GN3SqhfyjBe7iJCVYNggrY/JRyY1wHNtOGuWVzWbEhJl5C07GpD6x2EVNHH1IAOqrid7KOyiQg6T2gpw7JDQAtlwuNZtwkvlztFpm42xTS+xAQMJvpU2em+uxVU7NMwIiZRiQwktILs6wFNpLJfw64RHlGm3QJPWPwIlyXAIpgMY+PsgJ52CvCtqxAESzm8VFWIA97Rdj+A7EwUUCG28orAAAAAElFTkSuQmCC" width="48" height="48" alt="Twitter">
+			</a>
+			<!-- CodePen icon by Icons8 -->
+			<a href="https://codepen.io/VasilKaptselau/" target="_blank">
+				<img class="icon icons8-CodePen" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAE4UlEQVRoQ+2Z/bENQRDF+0VABoiADBABIkAEiAARIAJEgAiQAREgAyKgfmrOq1P95vPu3ip1y/xzP3Z3Zk6f7tPds2dxIuPsRHDEfyCTTN6KiNfl3ocR8WnyueXbjsXI5Yh4GhGP045eRsTziPi5vNPBA8cAcrewABgGG2cAjAEI2Hm/J5g9gVyNiBcRARDG58LIl/L7RkTAyM3yGyBPIuL7HoD2AvIoIp5FBCz8Kt/ZdG3gbtx7qbDD91dbwWwFgpVhgaBmfIiIB2WDihOszuA+xQfsAfROuYYIcJ/YW8a1BQg+jzUZP4obye+lVmxYa/wubuTqhRsC6EqZh/kUU0tgDgHim2Qx3IINEMSwgNwqTrjuQLQ5AANIz/A87skgZpalegVIltSvhQXlhvvFuooTYqAGhBhSfBAvb8t9GAh2rpffS1I9C6QmqXIr3AcWFCeoFXHyrQHkWkS8MfXCEDAg9WLeZakeAalJKpvUokp6YoFrihNiosaI1sQ4ABI7YoBnWNfBDqW6B6QnqagVLPDJwD1wE8/YIyA8hwEAgFsyUC3YkXpNS3UNyIykqvRArWChVkPNAFHw45YwIPXy+AAs17pSnYHMSiobQCZZsFU3rQAROxhI8ZHVqyvVGYgW70kqagULreSV1S3L70iN8AgYkHr1pPp8/y0g/j+WEeW40O1Opso5Btakbq5GM7nioykhxlM8snxm+0JjdeGGEpDuo24hx+Ru2WItW7uWyXNS9bJH6y0DwS8lp1kuVYpnBXMWdI0NuBo5O65Unq9InC7nvpdlIDzgDGR9x9WUCFEwFlPsOEOypDMASOZ2t81JFRd0hnK8TceIkKNM90xmXd/ZpItDZkglumopgDKXNul1Vm4BAPaugOkl12GMCIgs6orDhtkE/ymPeBLNOcZzBYbxPoRrMg5AW63yZkboFegnGFgSi7r85nqrlulrmTzXWdyDgWCBORm+9mYgslatptLi7u/c3+r6YE3dY44r5sqiItZ3da3cAcISG5Y7uL9na2fWclwBEOurR3HJl2tvZqQmhRSNMFTzd9hRVeutrhjF6rW4yicszs5mRjIL3gHiGi6f6ityoSeL+lyZIZ8rlyVi52BGSEhMIt8VCy6TrUTp/s73nNx8Ll3LZbuff3FNsbWcEKU0xAKLMdQB+nlUZiAnUandTPmRk26tyDwICIGsSnRUNLpFc2HoyW109gXwXYrGXmOTuzj5vz6zRbNf1xj1OXJlUDsrU2PXLFFyqY3i+FmVd3HKzHs2VqoMAJYrA2IRF1ei9OK0+n6kdkZ7yBnUSoe4claWz5T/stk7fOg1/rmvgCklM7nJDBCC34Uk9zHTZ8ozx0H5jDafQQFYyc/lcgQk9x6s0zorI05Yp3lyPwIi6+YM631FrUcBUO+Arnag52dlApQriiws579ngSifeC2FeuFOKjXIM1hV7OhFT1Yt1VJsEisr4RInuJl6c6/FmgByETa80W5YOYOq1Uf815PU3lnZLozkSWal2hlZktQV6664Vm3eGalW8lIw41qj13QrGIbyuzLZ9BlteQ8y+5pueg9bGfGFRq/TamfKXUmdRjFIiCvz+L01qeb6sqSubGBPRnxdpNelWteWJPVfAKI9SKr53Xr9sLLfo8jvLhvYa5JjudZe+5ue52SA/AFrOvBCCfaGMwAAAABJRU5ErkJggg==" width="48" height="48" alt="CodePen">
+			</a>
+			<!-- Resume icon by Icons8 -->
+			<a href="https://docs.google.com/document/d/1-7quIqnmYxvCSeILjOxEfPmwzbjMvBR-GvO7rWwuCEU/edit?usp=sharing" target="_blank">
+				<img class="icon icons8-Resume" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABXUlEQVRoQ2NkGOKAcYi7n2H4e2DCqZ//BzKWCszY8QYywRgY9QCF0TcaA6NJaDQJ0bAU+vHrL8O2My8Ybj/7wqAqxcPgZSLBwMHGTGGYo2qnaSZeduAxw+M33+A2gjwRZCU9dDzQueYmhmPLQ9SxegCbWnSF2PQOmhgYlB4Y8nmAqokdh2E0S0IvP/xkOHP7PcPtZ58Zfv7+x8DOysSgKsXLYKMlzMDPzUo1v9HEA5cffAQXn7gAqDjVVeBHkR5UeWDCxtvgUMcFQLFR4K86eD1AbmiSk65okoTIcQi5ekY9MNqcJjftQPWNJqFhmYSIKUaxpRzk1iaxLVmaJKEh7wEK8yVJ2mkSAyS5gELFox7AVgqRkgdI6WLSrUs55D1AYbImSftoHhitiZESzGhNjCX3jM7QkFSkkKF4tBQalqUQGSmBbC2jSWjIJyGy455OGgnWA3RyB9nWDHkPAAAw7xRARQFLtgAAAABJRU5ErkJggg==" width="48" height="48" alt="Resume">
+			</a>
+			<p style="font-size: small;">Copyright © 2016 by <a href="mailto:vasilkaptselau@gmail.com">Vasil Kaptselau</a> All rights reserved</p>
+			<p><a href="tel:+4257728735">1-425-772-8735</a>
+			</p>
+		</div>
+		<div class="form_container">  
+			<form id="contact" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?><!--" method="post">-->
+			  <h5>Contact Me</h5>
+			  <h6>Let's do a new project together!</h6>
+			  
+				<input placeholder="Your Name" type="text" name="name" tabindex="1" autofocus><!--value="<?= $name ?>"--> 
+				<span class="error"><?= $name_error ?></span>
+			  
+			  
+				<input placeholder="Email Address" type="text" name="email" tabindex="2"><!--value="<?= $email ?>"--> 
+				<span class="error"><?= $email_error ?></span>
+			  
+				<input placeholder="Phone Number" type="text" name="phone" tabindex="3"><!--value="<?= $phone ?>"--> 
+				<span class="error"><?= $phone_error ?></span>
+			  
+				<textarea placeholder="Please enter your message" class="message" name="message" tabindex="4"></textarea><!--value="<?= $message ?>"--> 
+				
+			  
+				<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+			  
+			  <div class="success"><?= $success ?></div>
+			</form>
+	  </div>
+    </footer>
+    <script type="text/javascript" src="js/particles.min.js"></script>
+    <script type="text/javascript" src="js/particles-app.js"></script>     
+</body>
+
+</html>

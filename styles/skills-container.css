@@ -1,0 +1,234 @@
+/* Skills Container */
+
+.skills-container .animation{
+    padding: 50px 42px;
+    /*text-align: center;*/
+}
+.skills-container {
+    margin-top: 10%;
+}
+.chart {
+    position: relative;
+    display: inline-block;
+    color: #999;
+    font-size: 20px;
+    text-align: center;
+}
+.chart figcaption {
+    padding: 50px 52px;
+    width: 200px;
+    height: 200px;
+    border: 20px solid rgba(67, 63, 59, 0.3);
+    border-radius: 100px;
+    line-height: 50px;
+}
+.chart img {
+    position: absolute;
+    max-width: 100px;
+    max-height: 100px;
+    background: white;
+}
+
+.chart svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.outer{
+    fill: transparent;
+    stroke: #333;
+    stroke-width: 20;
+    stroke-dasharray: 534;
+    transition: stroke-dashoffset 1s;
+   
+    /* firefox bug fix - won't rotate at 90deg angles */
+    -moz-transform: rotate(-89deg) translateX(-190px);
+}
+
+/* END Circle colors and graphic positions */
+/* Set the initial values for the animation */
+
+.outer1{
+    stroke: #e34f26;
+    stroke-dashoffset: 0;
+     /*-webkit-animation-play-state: running;*/
+    -webkit-animation: show100 2s;
+    animation: show100 2s;
+}
+.outer2{
+    stroke: #0d84ce;
+    stroke-dashoffset: 133;
+    -webkit-animation: show75 2s;
+    animation: show75 2s;
+}
+.outer3 {
+    stroke: #f0e040;
+    stroke-dashoffset: 267;
+    -webkit-animation: show50 2s;
+    animation: show50 2s;
+}
+.outer4 {
+    stroke: #83cd29;
+    stroke-dashoffset: 401;
+    -webkit-animation: show25 2s;
+    animation: show25 2s;
+}
+
+
+@-webkit-keyframes show100 {
+    from {
+        stroke-dashoffset: 537;
+    }
+    to {
+        stroke-dashoffset: 154;
+    }
+}
+@keyframes show100 {
+    from {
+        stroke-dashoffset: 537;
+    }
+    to {
+        stroke-dashoffset: 154;
+    }
+}
+@-webkit-keyframes show75 {
+    from {
+        stroke-dashoffset: 537;
+    }
+    to {
+        stroke-dashoffset: 134;
+    }
+}
+@keyframes show75 {
+    from {
+        stroke-dashoffset: 537;
+    }
+    to {
+        stroke-dashoffset: 124;
+    }
+}
+@-webkit-keyframes show50 {
+    from {
+        stroke-dashoffset: 537;
+    }
+    to {
+        stroke-dashoffset: 267;
+    }
+}
+@keyframes show50 {
+    from {
+        stroke-dashoffset: 537;
+    }
+    to {
+        stroke-dashoffset: 267;
+    }
+}
+@-webkit-keyframes show25 {
+    from {
+        stroke-dashoffset: 537;
+    }
+    to {
+        stroke-dashoffset: 401;
+    }
+}
+@keyframes show25 {
+    from {
+        stroke-dashoffset: 537;
+    }
+    to {
+        stroke-dashoffset: 401;
+    }
+}
+
+/*Typing Intro*/
+		 .container.intro{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      width:80%;
+      height:100%;
+      margin:0 auto;
+      text-align: center;
+      }
+    .logo_svg {
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+    a {
+      color:#6fc8f1;
+      text-decoration:none;
+      }
+    .hello, h1 {
+      font-size: inherit;
+    }
+    h1,h2,h4, span{
+      
+      font-family: 'planetium-x_bold_demoregular';
+      font-variant: small-caps;
+      font-weight: lighter;
+      letter-spacing: 0.3em;
+
+      }
+    .caption{
+      display:block;
+      border-right:0;
+      margin-bottom:10px;
+      
+    }
+		@media (min-width: 768px) {
+    body{
+        font-size:16px;
+        }
+    .caption{
+      animation:typing 4s steps(40,end) forwards;
+      white-space:nowrap;
+      width:0;
+      overflow:hidden;
+      }
+      
+  }
+  .occupation{
+      animation-delay:4s;
+      }
+    .past{
+      animation-delay:6s;
+      }
+    .current{
+      animation-delay:10s;
+      }
+  @media (min-width: 768px) {
+    /*.social-media{*/
+    /*  opacity:0;*/
+    /*  -webkit-animation:fade-in 15s ease-in forwards;*/
+    /*  animation:fade-in 15s ease-in forwards;*/
+    /*  transform:translateY(100%);*/
+    /*  margin-top: 0%;*/
+    /*  }*/
+      
+    .intro {
+      margin-bottom: 4%;
+    }
+  }
+    .social-media-list a{
+      color:#2ECC71;
+      }
+    @keyframes fade-in{
+      from{
+        opacity:0;
+        transform:translateY(100%);
+        }
+      to{
+        opacity:1;
+        transform:translateY(0);
+        }
+    }
+    @keyframes typing{
+      from{
+        width:0;
+        border-right:3px solid #6fc8f1;
+        }
+      to{
+        width:100%;
+        border-right:0;
+        }
+    }
