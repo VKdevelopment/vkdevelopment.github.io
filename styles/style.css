@@ -89,7 +89,7 @@ body {
 }
 .parallax.nyc.mount{
   background: url(../images/bg_mount.jpg) no-repeat top center;
-    height: 100vh;
+    /*height: 100vh;*/
 }
 .exp {
   margin-top: -50px;
@@ -100,6 +100,7 @@ body {
     color: #333;
     font-family: arial, sans-serif;
     padding: 3em 0;
+    display: flex;
 }
 .spacer h3 {
     font-family: lobster, sans-serif;
@@ -237,8 +238,8 @@ button:hover {
 /*image block skills*/
 
 .large-window {
-    min-height: 350px;
-    min-width: 350px;
+    min-height: 310px;
+    min-width: 310px;
     background-image: url(../images/iam.png);
     background-position: left 0px;
     background-repeat: repeat-y;
@@ -1256,4 +1257,76 @@ div#intro.spacer{
 	background: url(../images/bg.png) no-repeat center center;
 	color: #6fc8f1;
 	/*margin-top: .5%;*/
+}
+/*Media Queries*/
+/* fix iOS bug not displaying 100vh correctly */
+/* ipad */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	#particles-js {
+		height: 768px;
+	}
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	#particles-js {
+		height: 1024px;
+	}
+    .title h1 {
+    font-size: 2em;
+    margin-top: 60%;
+}
+}
+
+@media only screen and (max-device-width : 320px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+	#particles-js {
+		height: 480px;
+        
+	}
+    .title > h1 {
+    font-size: 2em;
+    margin-top: 60%;
+}
+    #mySkills, #slide {
+        flex-direction:column;
+    }
+    .large-window {
+    max-height: 310px;
+    max-width: 310px;
+    }
+    #myCanvas {
+    margin: 0%;
+    max-width: 310px;
+    }
+    .under_skills {
+    margin-top: -10%;
+    margin-left: 5%;
+    padding: 0px 3px;
+    font-size: .7em;
+    z-index: 9;
+}
+    .container_slideshow {
+        flex:1;
+    }
+    figure > img {
+        max-width: 310px;
+        margin-left: -25%;
+    }
+    #button_contact {
+        padding-top: 190px;
+        padding-bottom: 0px;
+    }
+    .parallax-content > h1{
+        font-size: 2.5em;
+        padding-top: 1.5em;
+    }
+    .container-timeline > h1 {
+        font-size: 2em;
+    }
+    .mount {
+        height: auto;
+        /*padding: 0px;*/
+    }
+    .exp {
+  margin-top: -130px;
+ 
+}
 }
