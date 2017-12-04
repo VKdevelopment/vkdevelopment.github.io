@@ -24,11 +24,16 @@
 }
 .chart img {
     position: absolute;
-    max-width: 100px;
-    max-height: 100px;
-    background: white;
+    max-width: 50px;
+    max-height: 50px;
+   
 }
-
+.node {
+  width: 200px;
+  height: 200px;
+  top: 45px;
+  left: 45px;
+}
 .chart svg {
     position: absolute;
     top: 0;
@@ -48,30 +53,30 @@
 /* END Circle colors and graphic positions */
 /* Set the initial values for the animation */
 
-.outer1{
+.chart[data-percent='90'] .outer1{
     stroke: #e34f26;
-    stroke-dashoffset: 0;
-     /*-webkit-animation-play-state: running;*/
-    -webkit-animation: show100 2s;
-    animation: show100 2s;
+    stroke-dashoffset: 124;
+    -webkit-animation: show100 2s 1s 4 alternate;
+    animation: show100 2s 1s 4 alternate;
 }
-.outer2{
+.chart[data-percent='90'] .outer2{
     stroke: #0d84ce;
-    stroke-dashoffset: 133;
-    -webkit-animation: show75 2s;
-    animation: show75 2s;
+    stroke-dashoffset: 130;
+    -webkit-animation: show75 2s 1.5s 4 alternate;
+    animation: show75 2s 1.5s 4 alternate;
+    
 }
-.outer3 {
+.chart[data-percent='75'] .outer3{
     stroke: #f0e040;
-    stroke-dashoffset: 267;
-    -webkit-animation: show50 2s;
-    animation: show50 2s;
+    stroke-dashoffset: 115;
+    -webkit-animation: show60 2s 2s 4 reverse;
+    animation: show60 2s 2s 4 reverse;
 }
-.outer4 {
+.chart[data-percent='70'] .outer4{
     stroke: #83cd29;
-    stroke-dashoffset: 401;
-    -webkit-animation: show25 2s;
-    animation: show25 2s;
+    stroke-dashoffset: 206;
+    -webkit-animation: show50 2s 2.5s 4 reverse;
+    animation: show50 2s 2.5s 4 reverse;
 }
 
 
@@ -80,7 +85,7 @@
         stroke-dashoffset: 537;
     }
     to {
-        stroke-dashoffset: 154;
+        stroke-dashoffset: 124;
     }
 }
 @keyframes show100 {
@@ -88,7 +93,7 @@
         stroke-dashoffset: 537;
     }
     to {
-        stroke-dashoffset: 154;
+        stroke-dashoffset: 124;
     }
 }
 @-webkit-keyframes show75 {
@@ -96,7 +101,7 @@
         stroke-dashoffset: 537;
     }
     to {
-        stroke-dashoffset: 134;
+        stroke-dashoffset: 130;
     }
 }
 @keyframes show75 {
@@ -104,7 +109,23 @@
         stroke-dashoffset: 537;
     }
     to {
-        stroke-dashoffset: 124;
+        stroke-dashoffset: 130;
+    }
+}
+@-webkit-keyframes show60 {
+    from {
+        stroke-dashoffset: 537;
+    }
+    to {
+        stroke-dashoffset: 115;
+    }
+}
+@keyframes show60 {
+    from {
+        stroke-dashoffset: 537;
+    }
+    to {
+        stroke-dashoffset: 115;
     }
 }
 @-webkit-keyframes show50 {
@@ -112,7 +133,7 @@
         stroke-dashoffset: 537;
     }
     to {
-        stroke-dashoffset: 267;
+        stroke-dashoffset: 206;
     }
 }
 @keyframes show50 {
@@ -120,26 +141,37 @@
         stroke-dashoffset: 537;
     }
     to {
-        stroke-dashoffset: 267;
+        stroke-dashoffset: 206;
     }
 }
-@-webkit-keyframes show25 {
-    from {
-        stroke-dashoffset: 537;
-    }
-    to {
-        stroke-dashoffset: 401;
-    }
+/*Skills Chart styling p*/
+.fa-paint-brush > p{
+     font-size:12px;
+     margin-top: 0px;
 }
-@keyframes show25 {
-    from {
-        stroke-dashoffset: 537;
-    }
-    to {
-        stroke-dashoffset: 401;
-    }
+.fa-code {
+    color:#e52030;
 }
-
+.fa-code > p {
+     font-size:12px;
+     margin-top: 0px;
+     margin-left: -25px;
+}
+.fa-search {
+    color:#fffa00;
+}
+.fa-search > p {
+     font-size:12px;
+     margin-top: 0px;
+     
+}
+.fa-bar-chart-o {
+    color:#ff9933;
+}
+.fa-bar-chart-o > p{
+     font-size:12px;
+     margin-top: 0px;
+}
 /*Typing Intro*/
 		 .container.intro{
       display:flex;

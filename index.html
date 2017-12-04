@@ -19,9 +19,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href='styles/owl.carousel.min.css'>
     <script type="text/javascript" src="js/functional.js"></script>
     <script type="text/javascript" src="js/tagcanvas.min.js"></script>
     <script type="text/javascript" src="js/arrow-top.js"></script>
+	    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+   
     <script type="text/javascript">
 	 window.onload = function() {
             try {
@@ -49,7 +52,6 @@
     
     <link rel="icon" type="image/png" href="Images/favicon.png">
 	
-</head>
 
 <body>
     <div class="parallax nyc hero parallaxis" id="home" data-parallax-speed="1.1">
@@ -104,16 +106,15 @@
 		
         <div class="hero-content">
             <div id="particles-js">
-                <canvas class="particles-js-canvas-el" width="1440" style="width: 100%; height: 100%;"></canvas>
+                <canvas class="particles-js-canvas-el" width="1440" style="width: 100%; height: 100vh"></canvas>
             </div>
            
         </div>
         <a href="#intro" class="scroll-icon"></a>
     </div>
     
-    <div class="cleft-wrapper">
+    <div class="cleft-wrapper top">
         <div class="cleft-left"></div>
-        <div class="cleft-right"></div>
     </div>
 
     <div class="spacer" id="intro">
@@ -147,17 +148,17 @@
         </div>
 		
     </div>
-
-    <div class="cleft-wrapper">
-        <div class="cleft-left"></div>
-        <div class="cleft-right"></div>
+	<div class="carrotBox">
+        <div class="carrot-top"></div>
     </div>
 
     <div class="spacer tallSpacer" id="mySkills" style="display: flex;">
 
         <div class="large-window" style="flex:1;">
             <div class="window-tint">
-                <div class="promo-text">Fall Suits<strong><span>from</span> $99</strong><a href="" class="window-cta">Shop Now</a>
+                <div class="promo-text">Fall Suits<strong>
+				<span>from</span> $99</strong>
+				<a href="" class="window-cta">Shop Now</a>
                 </div>
             </div>
         </div>
@@ -272,7 +273,7 @@
 
     <div class="parallax madrid" data-parallax-speed="0.9">
         <div class="parallax-content">
-            <h1>recently projects</h1>
+            <h1>recent projects</h1>
             <p></p>
 		</div>
 
@@ -332,42 +333,42 @@
 
     <div class="parallax nyc mount" data-parallax-speed="0.95">
         <div class="parallax-content">
-        <h1 class="exp">My expirences</h1>
+        <h1 class="exp">My experiences</h1>
 		</div>
-     <section class="skills-container">
+     <section class="skills-container" data-anime="scroll">
 	
-		   <!-- HTML Chart -->
-            <figure class="chart">
-                <figcaption>design</figcaption>
-                <!--<img class="html" src="https://dl.dropboxusercontent.com/s/68gv23q4y5qyq52/html5.svg">-->
+		   <!-- Design Chart -->
+            <figure class="chart" data-percent="90">
+                <figcaption class="fa fa-paint-brush"><p>Design</p></figcaption>  
+                
                 <svg width="200" height="200">
-                    <circle class="outer outer1" cx="90" cy="100" r="70" transform="rotate(-90, 95, 95)" />
+                    <circle class="outer outer1" cx="90" cy="100" r="90" transform="rotate(-90, 95, 95)" />
                 </svg>
             </figure>
 
-            <!-- CSS Chart -->
-            <figure class="chart">
-                <figcaption style="padding-left: 35px;">development</figcaption>
-                <!--<img class="css" src="https://dl.dropboxusercontent.com/s/gftbpqje9h2jvlv/css3.svg">-->
+            <!-- Code Chart -->
+            <figure class="chart" data-percent="90">
+                <figcaption class="fa fa-code"><p>Development</p></figcaption>
+                
                 <svg width="200" height="200">
-                    <circle class="outer outer2 " cx="90" cy="100" r="70" transform="rotate(-90, 95, 95)" />
+                    <circle class="outer outer2 " cx="90" cy="100" r="90" transform="rotate(-90, 95, 95)" />
                 </svg>
             </figure>
 
 
-            <!-- Javascript Chart -->
-            <figure class="chart">
-                <figcaption>SEO</figcaption>
-                <!--<img class="javascript" src="https://dl.dropboxusercontent.com/s/jsp3rsberc4q650/javascript.svg">-->
+            <!-- SEO Chart -->
+            <figure class="chart" data-percent="75">
+                <figcaption class="fa fa-search"><p>SEO</p></figcaption>
+                
                 <svg width="200" height="200">
                     <circle class="outer outer3" cx="90" cy="100" r="90" transform="rotate(-90, 95, 95)" />
                 </svg>
             </figure>
 
-            <!-- Node.js Chart -->
-            <figure class="chart">
-                <figcaption>Node</figcaption>
-                <!--<img class="node" src="https://dl.dropboxusercontent.com/s/v28zws1p38tjph2/node.png">-->
+            <!-- Analytic Chart -->
+            <figure class="chart" data-percent="70">
+                <figcaption class="fa  fa-bar-chart-o"><p>Analytics</p></figcaption>
+                
                 <svg width="200" height="200">
                     <circle class="outer outer4" cx="90" cy="100" r="90" transform="rotate(-90, 95, 95)" />
                 </svg>
@@ -382,42 +383,166 @@
         <div class="cleft-right"></div>
     </div>
 
-    <div class="spacer">
-        <div class="container">
-
-            <h3>Is this the end?</h3>
-            <p>Mauris condimentum porttitor massa molestie elementum. Proin rhoncus, arcu sit amet molestie dignissim, sapien risus mattis arcu, et fringilla ipsum purus vitae neque. Phasellus ultricies dolor libero, at efficitur nulla tincidunt eget. Donec eget mauris nec libero vestibulum porta. Aenean sit amet turpis vehicula, vestibulum nunc sed, dapibus ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lobortis tincidunt iaculis. Aenean et odio eros. Aenean fermentum mi ac maximus sollicitudin. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam posuere, est id varius posuere, dolor nisi interdum ante, eget consequat ante mi non ex. Mauris bibendum ac diam vitae efficitur.</p>
-            <p>Mauris condimentum porttitor massa molestie elementum. Proin rhoncus, arcu sit amet molestie dignissim, sapien risus mattis arcu, et fringilla ipsum purus vitae neque. Phasellus ultricies dolor libero, at efficitur nulla tincidunt eget. Donec eget mauris nec libero vestibulum porta. Aenean sit amet turpis vehicula, vestibulum nunc sed, dapibus ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lobortis tincidunt iaculis. Aenean et odio eros. Aenean fermentum mi ac maximus sollicitudin. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam posuere, est id varius posuere, dolor nisi interdum ante, eget consequat ante mi non ex. Mauris bibendum ac diam vitae efficitur.</p>
-            <p>Mauris condimentum porttitor massa molestie elementum. Proin rhoncus, arcu sit amet molestie dignissim, sapien risus mattis arcu, et fringilla ipsum purus vitae neque. Phasellus ultricies dolor libero, at efficitur nulla tincidunt eget. Donec eget mauris nec libero vestibulum porta. Aenean sit amet turpis vehicula, vestibulum nunc sed, dapibus ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lobortis tincidunt iaculis. Aenean et odio eros. Aenean fermentum mi ac maximus sollicitudin. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam posuere, est id varius posuere, dolor nisi interdum ante, eget consequat ante mi non ex. Mauris bibendum ac diam vitae efficitur.</p>
-            <p>Mauris condimentum porttitor massa molestie elementum. Proin rhoncus, arcu sit amet molestie dignissim, sapien risus mattis arcu, et fringilla ipsum purus vitae neque. Phasellus ultricies dolor libero, at efficitur nulla tincidunt eget. Donec eget mauris nec libero vestibulum porta. Aenean sit amet turpis vehicula, vestibulum nunc sed, dapibus ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lobortis tincidunt iaculis. Aenean et odio eros. Aenean fermentum mi ac maximus sollicitudin. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam posuere, est id varius posuere, dolor nisi interdum ante, eget consequat ante mi non ex. Mauris bibendum ac diam vitae efficitur.</p>
-            <p>Mauris condimentum porttitor massa molestie elementum. Proin rhoncus, arcu sit amet molestie dignissim, sapien risus mattis arcu, et fringilla ipsum purus vitae neque. Phasellus ultricies dolor libero, at efficitur nulla tincidunt eget. Donec eget mauris nec libero vestibulum porta. Aenean sit amet turpis vehicula, vestibulum nunc sed, dapibus ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lobortis tincidunt iaculis. Aenean et odio eros. Aenean fermentum mi ac maximus sollicitudin. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam posuere, est id varius posuere, dolor nisi interdum ante, eget consequat ante mi non ex. Mauris bibendum ac diam vitae efficitur.</p>
-            <p>Mauris condimentum porttitor massa molestie elementum. Proin rhoncus, arcu sit amet molestie dignissim, sapien risus mattis arcu, et fringilla ipsum purus vitae neque. Phasellus ultricies dolor libero, at efficitur nulla tincidunt eget. Donec eget mauris nec libero vestibulum porta. Aenean sit amet turpis vehicula, vestibulum nunc sed, dapibus ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lobortis tincidunt iaculis. Aenean et odio eros. Aenean fermentum mi ac maximus sollicitudin. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam posuere, est id varius posuere, dolor nisi interdum ante, eget consequat ante mi non ex. Mauris bibendum ac diam vitae efficitur.</p>
-        </div>
+    <div class="spacer-time">
+			<div class="container-timeline">
+				<h1>Website Development Process</h1>
+				<div id="timeline">
+					
+				  <div class="timeline-block">
+					<div class="timeline-year right meetup" data-anime="scroll"></div> 
+					<div class="timeline-content" data-anime-left="scroll-left">
+					  <h6>Initial Meeting</h6>
+					  <p>Identifying client needs, goals, target audiences, and competition.</p>
+					</div> 
+				  </div> 
+				  <div class="timeline-block">
+					<div class="timeline-year left design" data-anime="scroll"></div> 
+					<div class="timeline-content" data-anime-right="scroll-right">
+					  <h6>Design</h6>
+					  <p>It’s time to start create the sitemap and wireframes of pages (UX design). Design mock-ups to add visual style (UI design).</p>
+					</div> 
+				  </div> 
+				<div class="timeline-block">
+				  <div class="timeline-year right dev" data-anime="scroll"></div> 
+				  <div class="timeline-content" data-anime-left="scroll-left">
+					<h6>Development</h6>
+					<p>When website design approved, it's time to develop any of the functional, customizable elements which are required. </p>
+				  </div>
+				</div> 
+				  <div class="timeline-block">
+					<div class="timeline-year left launch" data-anime="scroll"></div> 
+					<div class="timeline-content" data-anime-right="scroll-right">
+						<h6>Launch</h6>
+					  <p>Before website is launched, it needs to test. QA testing of the site is critical because will inevitably be issues that need to be addressed before the site goes live.</p>
+					</div> 
+				  </div> 
+				<div class="timeline-block">
+				  <div class="timeline-year right review" data-anime="scroll"></div> 
+				  <div class="timeline-content" data-anime-left="scroll-left">
+					<h6>Review</h6>
+					<p>Now, take a breath and enjoy to beautiful website. However, fixing broken links, adjustments or updating content it's coming up. </p>
+				  </div> 
+				</div> 
+				</div> 
+			  </div>
+         </div>
+	<div class="carrotBox">
+        <div class="carrot"></div>
     </div>
+  <!--   Clients Feedback -->
+    <div class="parallax madrid feedback" data-parallax-speed="1.1">
+        <div class="parallax-content">
+            <h1>Clients Testimonials</h1>
+            <div class="owl-carousel testimonial-carousel">
+
+
+  <!-- Feedback 1 -->
+  <div class="single-testimonial">
+    <div class="testimonials-wrapper">
+      <h4>You’ve done a lot of good work, which helps us better see what works,
+		  what might not! First and foremost, thank you for your work.</h4>
+      <div class="testimonials-blob"></div>
+      <div class="testimonials-img"><img src="images/nucc.jpg"></div>
+      <div class="testimonials-person-info">
+        <p>Ann Eidson<br /><span>Pastor</span></p>
+      </div>
+    </div>
+  </div>
+  <!-- Feedback 2 -->
+  <div class="single-testimonial">
+    <div class="testimonials-wrapper">
+      <h4>Thank you Daddy for amazing present!!!
+				  He found a way how to keep all my drawings. I like to draw
+				  and I already have bunch of my pictures because I started to draw
+				  when I was very young. Now, I can show my pictures to my friends
+				  and teachers in my schools.</h4>
+      <div class="testimonials-blob"></div>
+      <div class="testimonials-img"><img src="images/aryna.png"></div>
+      <div class="testimonials-person-info">
+        <p><b>Aryna</b><br /></p>
+      </div>
+    </div>
+  </div>
+  <!-- Feedback 3 -->
+  <div class="single-testimonial">
+    <div class="testimonials-wrapper">
+      <h4>Mr.Vasil, thank you for your time! We were surprised that you are
+				  not only a great teacher but also you built website
+				  which we can share between our friends and parents.</h4>
+      <div class="testimonials-blob"></div>
+      <div class="testimonials-img"><img src="images/elena.png"></div>
+      <div class="testimonials-person-info">
+        <p>Elena<br /><span>Musicant</span></p>
+      </div>
+    </div>
+  </div>
+  <!-- Feedback 4 -->
+  <div class="single-testimonial">
+    <div class="testimonials-wrapper">
+      <h4> He showed himself to be very process oriented, a team player, and willing to put in additional hour and effort to ensure his projects were robust and successful.</h4>
+      <div class="testimonials-blob"></div>
+      <div class="testimonials-img"><img src="images/craig.png"></div>
+      <div class="testimonials-person-info">
+        <p>Craig<br /><span>Professor</span></p>
+      </div>
+    </div>
+  </div>
+  <!-- Feedback 5 -->
+  <div class="single-testimonial">
+    <div class="testimonials-wrapper">
+      <h4>I worked with Vasil as his Faculty advisor on several web development projects. His strong
+			front-end development skillset, attention to detail, and consistently high-quality work made
+			a great impression on his clients earning him very positive reviews.</h4>
+      <div class="testimonials-blob"></div>
+      <div class="testimonials-img"><img src="images/brain.png"></div>
+      <div class="testimonials-person-info">
+        <p>Brian<br /><span>Senior Founding Faculty</span></p>
+      </div>
+    </div>
+  </div>
+  <!-- Feedback 6-->
+  <div class="single-testimonial">
+    <div class="testimonials-wrapper">
+      <h4>I worked with Vasil as his Faculty advisor on several web development projects. His strong
+			front-end development skillset, attention to detail, and consistently high-quality work made
+			a great impression on his clients earning him very positive reviews.</h4>
+      <div class="testimonials-blob"></div>
+      <div class="testimonials-img"><img src="images/anna.png"></div>
+      <div class="testimonials-person-info">
+        <p>Anna<br /><span>School Administrator</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+		</div>
+
+    </div>
+    
+<!--Footer	-->
     <footer id="contact" class="footer-container social-media">
+	<!--Map-->
 		<div id="empty_footer_left" >
 			
 			<div class="page-section section-dark section-center ">
-		
-			
-
-			<div class="location-map location-map-lg">
-				<div class="location-container">
-					<div class="location location-seattle animate zoomIn" style="visibility: visible; animation-name: zoomIn;">
-						<img id="usa_map" src="images/map.svg" alt="USA map">
-						<span class="location-name">
-							<span>Seattle</span>
-						</span>
-						<span class="location-pin"></span>
+				<div class="location-map location-map-lg">
+					<div class="location-container">
+						<div class="location location-seattle animate zoomIn" style="visibility: visible; animation-name: zoomIn;">
+							<img id="usa_map" src="images/map.svg" alt="USA map">
+							<span class="location-name">
+								<span>Seattle</span>
+							</span>
+							<span class="location-pin"></span>
+						</div>
+						
+						<div class="map"></div>
 					</div>
 					
-					<div class="map"></div>
 				</div>
-				
-			</div>
 		
-	</div>
+			</div>
 		</div>
+		<!--Center-->
 		<div id="footer_center">
 			<h2>Before you go</h2>
 			<h4>Follow me maybe?</h4>
@@ -445,12 +570,13 @@
 			<p><a href="tel:+4257728735">1-425-772-8735</a>
 			</p>
 		</div>
+		<!--Contact Form-->
 		<div class="form_container">  
 			<form id="contact" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?><!--" method="post">-->
 			  <h5>Contact Me</h5>
 			  <h6>Let's do a new project together!</h6>
 			  
-				<input placeholder="Your Name" type="text" name="name" tabindex="1" autofocus><!--value="<?= $name ?>"--> 
+				<input placeholder="Your Name" type="text" name="name" tabindex="1"><!--value="<?= $name ?>"--> 
 				<span class="error"><?= $name_error ?></span>
 			  
 			  
