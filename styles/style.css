@@ -46,7 +46,7 @@ body {
 }
 .parallaxis {
     padding: 0em 0em;
-    height: inherit;
+    height: 100vh;
 }
 /*  Canvas*/
 
@@ -1276,7 +1276,7 @@ div#intro.spacer{
 }
 }
 
-@media only screen and (max-device-width : 320px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+@media only screen and (max-device-width : 425px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
 	#particles-js {
 		height: 480px;
         
