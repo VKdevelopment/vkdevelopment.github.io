@@ -1276,7 +1276,7 @@ div#intro.spacer{
 }
 }
 
-@media only screen and (max-device-width : 425px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+@media only screen and (max-device-width : 425px) and (orientation : portrait) {
 	#particles-js {
 		height: 480px;
         
@@ -1328,5 +1328,15 @@ div#intro.spacer{
     .exp {
   margin-top: -130px;
  
-}
+    }
+    .scroll-icon {
+        bottom: 40px;
+    }
+    .title {
+        padding-top: 200px;
+    }
+    a #logo {
+        margin-top: 60%;
+        margin-left: 60%;
+    }
 }
