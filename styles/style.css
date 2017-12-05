@@ -42,7 +42,7 @@ body {
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
 }
 .nyc {
-    background: url(../images/seattle_header.jpg) no-repeat center center;
+    background: url(../images/seattle_headers.jpg) no-repeat center center;
 }
 .parallaxis {
     padding: 0em 0em;
@@ -71,12 +71,12 @@ body {
     background: rgba(67, 63, 59, 0.5);
 }
 .madrid {
-    background: url(../images/bg_apple.jpg) no-repeat center center;
+    background: url(../images/bg_apples.jpg) no-repeat center center;
     height: 100vh;
 }
 /*My skills styling*/
 .paris {
-    background: url(../images/bg_working.png) no-repeat center center;
+    background: url(../images/bg_work.jpg) no-repeat center center;
     
     height: 100vh;
     
@@ -88,7 +88,7 @@ body {
   margin-left: -6%;
 }
 .parallax.nyc.mount{
-  background: url(../images/bg_mount.jpg) no-repeat top center;
+  background: url(../images/bg_mounts.jpg) no-repeat top center;
     /*height: 100vh;*/
 }
 .exp {
@@ -241,7 +241,7 @@ button:hover {
 .large-window {
     min-height: 310px;
     min-width: 310px;
-    background-image: url(../images/iam.png);
+    background-image: url(../images/iam.jpg);
     background-position: left 0px;
     background-repeat: repeat-y;
     background-attachment: fixed;
@@ -374,7 +374,7 @@ a {
 }
 /*Timeline Container*/
 .spacer-time {
-  background: url(../images/dev_procs.png) no-repeat center center;  
+  background: url(../images/dev_procs.jpg) no-repeat center center;  
 }
 
 .container-timeline {
@@ -697,7 +697,7 @@ a {
 }
 /*Clients Feedback*/
 .feedback {
-    background: url(../images/feedback.jpg) no-repeat center center;
+    background: url(../images/feedbacks.jpg) no-repeat center center;
     height: 100vh;
 }
 .feedback > div h1 {
@@ -1284,6 +1284,10 @@ div#intro.spacer{
 	}
     .carrot-top {
     border-right: 1.5em solid transparent;
+    
+    }
+    .carrot {
+    border-right: 2em solid transparent;
     
     }
     .title > h1 {
