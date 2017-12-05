@@ -1344,4 +1344,7 @@ div#intro.spacer{
     .feedback > div h1 {
     margin-top: -25%;
     }
+    .spacer-time {
+        margin-bottom: -50px;
+    }
 }
