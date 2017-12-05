@@ -153,7 +153,7 @@ var jump = function(e) {
 
     $(document).scroll(debounce(function(){
       animeScroll();
-    }, 100));
+    }, 10));
     
   });
           

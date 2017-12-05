@@ -187,6 +187,7 @@ button:hover {
     right: -1.5rem;
     z-index: -1;
     background-color: transparent;
+    left: 0;
 }
 .cleft-left:before,
 .cleft-right:before {
@@ -892,7 +893,7 @@ a {
 /*Footer*/
 
 footer {
-    height: 500px;
+    height: 520px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1281,12 +1282,17 @@ div#intro.spacer{
 		height: 480px;
         
 	}
+    .carrot-top {
+    border-right: 1.5em solid transparent;
+    
+    }
     .title > h1 {
     font-size: 2em;
     margin-top: 60%;
 }
     #mySkills, #slide {
         flex-direction:column;
+        align-items: center;
     }
     .large-window {
     max-height: 310px;
@@ -1308,7 +1314,10 @@ div#intro.spacer{
     }
     figure > img {
         max-width: 310px;
-        margin-left: -25%;
+       /* margin-left: -25%;*/
+    }
+    .container_slideshow > figure {
+        margin-left: -160px;
     }
     #button_contact {
         padding-top: 190px;
