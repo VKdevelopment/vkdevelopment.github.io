@@ -933,7 +933,7 @@ footer h4 {
 /*		Styling Contact Form*/
 	
 	form {
-    height: 450px;
+    /*height: 450px;*/
     padding:10px;
     border: 1px solid rgba(0,0,0,.2);
     border-radius: 5px;
@@ -1044,8 +1044,8 @@ input:focus, textarea:focus {
     display: block;
     height: 28px;
 	font-size: .7em;
-	margin-top: -15.8%;
-	margin-left: -4%;
+	margin-top: -16.5%;
+    margin-left: -4%;
 }
 .location-name span {
     display: block;
@@ -1347,4 +1347,37 @@ div#intro.spacer{
     .spacer-time {
         margin-bottom: -50px;
     }
+    
+    #usa_map {
+    width: 180%;
+    margin-top: 200px;
+    
+    }
+    .location-name {
+    margin-top: -120px;
+    
+}
+    .location-pin {
+    margin-top: -76%;
+    margin-left: 13px;
+}
+.location-seattle .location-name:after {
+    right: 31px;
+    width: 34px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(90deg);
+}
+}
+.icon {
+    width: 24px;
+    height: 24px;
+    
+}
+#footer_center p:last-child{
+        margin-top: -10px;
+}
+#footer_center {
+        margin-left: -70px;
+}
+
 }
