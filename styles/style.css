@@ -700,7 +700,7 @@ a {
     height: 100vh;
 }
 .feedback > div h1 {
-    margin-top: -20%;
+    margin-top: -10%;
 }
 .chart > .fa{
 		    
@@ -1340,9 +1340,7 @@ div#intro.spacer{
         margin-top: 60%;
         margin-left: 60%;
     }
-    .feedback {
-        margin-top: -5%;
-    }
+    
     .feedback > div h1 {
     margin-top: -25%;
     }
