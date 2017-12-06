@@ -93,7 +93,7 @@ body {
 }
 .parallax.nyc.mount{
   background: url(../images/bg_mounts.jpg) no-repeat top center;
-    /*height: 100vh;*/
+  
 }
 .exp {
   margin-top: -50px;
@@ -938,7 +938,6 @@ footer h4 {
 /*		Styling Contact Form*/
 	
 	form {
-    /*height: 450px;*/
     padding:10px;
     border: 1px solid rgba(0,0,0,.2);
     border-radius: 5px;
@@ -1261,7 +1260,7 @@ figcaption {
 div#intro.spacer{
 	background: url(../images/bg.png) no-repeat center center;
 	color: #6fc8f1;
-	/*margin-top: .5%;*/
+	
 }
 /*Media Queries*/
 /* fix iOS bug not displaying 100vh correctly */
@@ -1322,7 +1321,7 @@ div#intro.spacer{
     }
     figure > img {
         max-width: 310px;
-       /* margin-left: -25%;*/
+      
     }
     .container_slideshow > figure {
         margin-left: -160px;
@@ -1341,7 +1340,7 @@ div#intro.spacer{
     }
     .mount {
         height: auto;
-        /*padding: 0px;*/
+       
     }
     .exp {
   margin-top: -130px;
@@ -1360,9 +1359,7 @@ div#intro.spacer{
     .feedback > div {
         margin-top: -200px;
     }
-    /*.feedback > div h1 {
-    margin-top: -25%;
-    }*/
+  
     .spacer-time {
         margin-bottom: -50px;
     }

@@ -2,11 +2,9 @@
 
 .skills-container .animation{
     padding: 50px 42px;
-    /*text-align: center;*/
+   
 }
-.skills-container {
-    /*margin-top: 10%;*/
-}
+
 .chart {
     position: relative;
     display: inline-block;
