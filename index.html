@@ -15,17 +15,17 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="styles/menu.css" />
     <link rel="stylesheet" href="styles/skills-container.css" />
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" href='styles/owl.carousel.min.css'>
-    <script type="text/javascript" src="js/functional.js"></script>
-    <script type="text/javascript" src="js/tagcanvas.min.js"></script>
-    <script type="text/javascript" src="js/arrow-top.js"></script>
-	    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/functional.js"></script>
+    <script src="js/tagcanvas.min.js"></script>
+    <script src="js/arrow-top.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
    
-    <script type="text/javascript">
+    <script>
 	 window.onload = function() {
             try {
                 TagCanvas.Start('myCanvas', 'tags', {
@@ -75,7 +75,7 @@
 				<a href="#mySkills" class="menu-item menu-right-third"> <i class="fa fa-briefcase"></i> </a>
                 <a href="#intro" class="menu-item menu-right-four"> <i class="fa fa-user"></i> </a>
                 <a href="#home" class="menu-item menu-right-five"> <i class="fa fa-home"></i> </a>
-                <a href="#contact" class="menu-item menu-right-second"> <i class="fa fa-envelope"></i> </a>
+                <a href="#contacts" class="menu-item menu-right-second"> <i class="fa fa-envelope"></i> </a>
                 
 				<a href="https://vasilkaptselau.github.io/portfolio/index.html" class="menu-right-first">
 					 <img id="logo" class=" flipInY" src="images/vk.png" alt="Logo VK Design">
@@ -328,8 +328,8 @@
         <div class="parallax-content">
         <h1 class="exp">My experiences</h1>
 		</div>
-     <section class="skills-container" data-anime="scroll">
-	
+     <div class="skills-container" data-anime="scroll">
+			
 		   <!-- Design Chart -->
             <figure class="chart" data-percent="90">
                 <figcaption class="fa fa-paint-brush"><p>Design</p></figcaption>  
@@ -367,7 +367,7 @@
                 </svg>
             </figure>
 
-        </section>
+        </div>
 
     </div>
     
@@ -435,7 +435,7 @@
       <h4>You’ve done a lot of good work, which helps us better see what works,
 		  what might not! First and foremost, thank you for your work.</h4>
       <div class="testimonials-blob"></div>
-      <div class="testimonials-img"><img src="images/nucc.jpg"></div>
+      <div class="testimonials-img"><img src="images/nucc.jpg" alt="NorthShore Church"></div>
       <div class="testimonials-person-info">
         <p>Ann Eidson<br /><span>Pastor</span></p>
       </div>
@@ -450,7 +450,7 @@
 				  when I was very young. Now, I can show my pictures to my friends
 				  and teachers in my schools.</h4>
       <div class="testimonials-blob"></div>
-      <div class="testimonials-img"><img src="images/aryna.png"></div>
+      <div class="testimonials-img"><img src="images/aryna.png" alt="Aryna image"></div>
       <div class="testimonials-person-info">
         <p><b>Aryna</b><br /></p>
       </div>
@@ -463,7 +463,7 @@
 				  not only a great teacher but also you built website
 				  which we can share between our friends and parents.</h4>
       <div class="testimonials-blob"></div>
-      <div class="testimonials-img"><img src="images/elena.png"></div>
+      <div class="testimonials-img"><img src="images/elena.png" alt="Elena Violin"></div>
       <div class="testimonials-person-info">
         <p>Elena<br /><span>Musicant</span></p>
       </div>
@@ -474,7 +474,7 @@
     <div class="testimonials-wrapper">
       <h4> He showed himself to be very process oriented, a team player, and willing to put in additional hour and effort to ensure his projects were robust and successful.</h4>
       <div class="testimonials-blob"></div>
-      <div class="testimonials-img"><img src="images/craig.png"></div>
+      <div class="testimonials-img"><img src="images/craig.png" alt="Craig Duckett"></div>
       <div class="testimonials-person-info">
         <p>Craig<br /><span>Professor</span></p>
       </div>
@@ -487,7 +487,7 @@
 			front-end development skillset, attention to detail, and consistently high-quality work made
 			a great impression on his clients earning him very positive reviews.</h4>
       <div class="testimonials-blob"></div>
-      <div class="testimonials-img"><img src="images/brain.png"></div>
+      <div class="testimonials-img"><img src="images/brain.png" alt="Brain Bansenauer"></div>
       <div class="testimonials-person-info">
         <p>Brian<br /><span>Senior Founding Faculty</span></p>
       </div>
@@ -500,7 +500,7 @@
 			front-end development skillset, attention to detail, and consistently high-quality work made
 			a great impression on his clients earning him very positive reviews.</h4>
       <div class="testimonials-blob"></div>
-      <div class="testimonials-img"><img src="images/anna.png"></div>
+      <div class="testimonials-img"><img src="images/anna.png" alt="Anna Yemets"></div>
       <div class="testimonials-person-info">
         <p>Anna<br /><span>School Administrator</span></p>
       </div>
@@ -513,7 +513,7 @@
     </div>
     
 <!--Footer	-->
-    <footer id="contact" class="footer-container social-media">
+    <footer id="contacts" class="footer-container social-media">
 	<!--Map-->
 		<div id="empty_footer_left" >
 			
@@ -566,31 +566,31 @@
 		<!--Contact Form-->
 		<?php include('form_process.php'); ?>
 		<div class="form_container">  
-			<form id="contact" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
+			<form id="contact" action="<?php= htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
 			  <h5>Contact Me</h5>
 			  <h6>Let's do a new project together!</h6>
 			  
-				<input placeholder="Your name" type="text" name="name" value="<?= $name ?>" tabindex="1">
-				<span class="error"><?= $name_error ?></span>
+				<input placeholder="Your name" type="text" name="name" value="<?php= $name ?>" tabindex="1">
+				<span class="error"><?php= $name_error ?></span>
 			  
 			  
-				<input placeholder="Email Address" type="text" name="email" value="<?= $email ?>" tabindex="2">
-				<span class="error"><?= $email_error ?></span>
+				<input placeholder="Email Address" type="text" name="email" value="<?php= $email ?>" tabindex="2">
+				<span class="error"><?php= $email_error ?></span>
 			  
-				<input placeholder="Phone Number" type="text" name="phone" value="<?= $phone ?> tabindex="3">
-				<span class="error"><?= $phone_error ?></span>
+				<input placeholder="Phone Number" type="text" name="phone" value="<?php= $phone ?>" tabindex="3">
+				<span class="error"><?php= $phone_error ?></span>
 			  
-				<textarea placeholder="Please enter your message" class="message" name="message" value="<?= $message ?> tabindex="4"></textarea> 
+				<textarea placeholder="Please enter your message" class="message" name="message" value="<?php= $message ?>"></textarea>  <!--tabindex="4"-->
 				
 			  
 				<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
 			  
-			  <div class="success"><?= $success ?></div>
+			  <div class="success"><?php= $success ?></div>
 			</form>
 	  </div>
     </footer>
-    <script type="text/javascript" src="js/particles.min.js"></script>
-    <script type="text/javascript" src="js/particles-app.js"></script>     
+    <script src="js/particles.min.js"></script>
+    <script src="js/particles-app.js"></script>     
 </body>
 
 </html>
