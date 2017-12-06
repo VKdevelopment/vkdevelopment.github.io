@@ -11,6 +11,10 @@ body {
     margin: 0px;
     
 }
+/*button to top*/
+#topcontrol { 
+    right: 15px;
+}
 .hero {
     position: relative;
     text-align: center;
@@ -138,7 +142,7 @@ button:hover {
  .container {
     max-width: 1440px;
     margin: 0 auto;
-    width: 95%
+   
 }
 .centered {
     text-align: center;
@@ -1287,7 +1291,7 @@ div#intro.spacer{
     
     }
     .carrot {
-    border-right: 2em solid transparent;
+    border-right: 5em solid transparent;
     
     }
     .title > h1 {
@@ -1349,14 +1353,16 @@ div#intro.spacer{
     .title {
         padding-top: 200px;
     }
+/*logo not visiable in Mobile*/
     a #logo {
-        margin-top: 60%;
-        margin-left: 60%;
+        visibility: hidden;
     }
-    
-    .feedback > div h1 {
+    .feedback > div {
+        margin-top: -200px;
+    }
+    /*.feedback > div h1 {
     margin-top: -25%;
-    }
+    }*/
     .spacer-time {
         margin-bottom: -50px;
     }
