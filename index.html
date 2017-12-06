@@ -564,22 +564,23 @@
 			</p>
 		</div>
 		<!--Contact Form-->
+		<?php include('form_process.php'); ?>
 		<div class="form_container">  
-			<form id="contact" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?><!--" method="post">-->
+			<form id="contact" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
 			  <h5>Contact Me</h5>
 			  <h6>Let's do a new project together!</h6>
 			  
-				<input placeholder="Your Name" type="text" name="name" tabindex="1"><!--value="<?= $name ?>"--> 
+				<input placeholder="Your name" type="text" name="name" value="<?= $name ?>" tabindex="1">
 				<span class="error"><?= $name_error ?></span>
 			  
 			  
-				<input placeholder="Email Address" type="text" name="email" tabindex="2"><!--value="<?= $email ?>"--> 
+				<input placeholder="Email Address" type="text" name="email" value="<?= $email ?>" tabindex="2">
 				<span class="error"><?= $email_error ?></span>
 			  
-				<input placeholder="Phone Number" type="text" name="phone" tabindex="3"><!--value="<?= $phone ?>"--> 
+				<input placeholder="Phone Number" type="text" name="phone" value="<?= $phone ?> tabindex="3">
 				<span class="error"><?= $phone_error ?></span>
 			  
-				<textarea placeholder="Please enter your message" class="message" name="message" tabindex="4"></textarea><!--value="<?= $message ?>"--> 
+				<textarea placeholder="Please enter your message" class="message" name="message" value="<?= $message ?> tabindex="4"></textarea> 
 				
 			  
 				<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
