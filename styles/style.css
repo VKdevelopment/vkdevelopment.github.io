@@ -244,8 +244,8 @@ button:hover {
 .large-window {
     min-height: 310px;
     min-width: 310px;
-    background-image: url(../images/iamm.jpg);
-    background-position: left 0px;
+    background-image: url(../images/iam.jpg);
+    background-position: 300px -200px;
     background-repeat: repeat-y;
     background-attachment: fixed;
     border-radius: 50%;
@@ -274,6 +274,7 @@ button:hover {
     font-weight: 100;
     font-size: 50px;
     line-height: 1.2;
+    margin-left: -150px;
 }
 .large-window .promo-text strong {
     display: block;
@@ -1066,7 +1067,7 @@ input:focus, textarea:focus {
     display: block;
     height: 28px;
 	font-size: .7em;
-	margin-top: -16.5%;
+	margin-top: -16%;
     margin-left: -4%;
 }
 .location-name span {
@@ -1271,7 +1272,7 @@ figcaption {
 	-webkit-box-flex:1;
 	    -ms-flex:1;
 	        flex:1;
-	text-align: -webkit-right;
+	text-align: right;
 	margin-right: 5%;
 
 }
@@ -1287,6 +1288,15 @@ div#intro.spacer{
 	#particles-js {
 		height: 768px;
 	}
+    #myCanvasContainer {
+        margin-left: -100px;
+    }
+    .large-window {
+        background-position: 60px -250px;
+    }
+    #button_contact {
+        margin-left: 65%;
+    }
 }
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
 	#particles-js {
@@ -1295,7 +1305,7 @@ div#intro.spacer{
     .title h1 {
     font-size: 2em;
     margin-top: 60%;
-}
+    }
 }
 
 @media only screen and (max-device-width : 425px) and (orientation : portrait) {
@@ -1311,6 +1321,12 @@ div#intro.spacer{
     border-right: 5em solid transparent;
     
     }
+    .paris {
+    background: url(../images/mobile.jpg) no-repeat center center;
+    
+    height: 100vh;
+    
+}
     .title > h1 {
     font-size: 2em;
     margin-top: 60%;
@@ -1326,6 +1342,9 @@ div#intro.spacer{
     #myCanvas {
     margin: 0%;
     max-width: 310px;
+    }
+    .large-window {
+    background-position: -90px -250px;
     }
     .under_skills {
     margin-top: -10%;
@@ -1347,6 +1366,8 @@ div#intro.spacer{
     #button_contact {
         padding-top: 190px;
         padding-bottom: 0px;
+        text-align: center;
+        margin-right: 0%;
     }
     .parallax-content > h1{
         font-size: 2.5em;
@@ -1396,9 +1417,10 @@ div#intro.spacer{
     margin-left: 13px;
 }
 .location-seattle .location-name:after {
+    bottom: -10px;
     right: 31px;
     width: 34px;
-    -webkit-transform: rotate(45deg);
+    -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
 

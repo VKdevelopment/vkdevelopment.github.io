@@ -205,10 +205,8 @@
       margin-bottom:10px;
       
     }
-		@media (min-width: 768px) {
-    body{
-        font-size:16px;
-        }
+	
+    
     .caption{
       animation:typing 4s steps(40,end) forwards;
       white-space:nowrap;
@@ -216,7 +214,7 @@
       overflow:hidden;
       }
       
-  }
+  
   .occupation{
       animation-delay:4s;
       }
@@ -226,17 +224,19 @@
     .current{
       animation-delay:10s;
       }
-  @media (min-width: 768px) {
-    /*.social-media{*/
-    /*  opacity:0;*/
-    /*  -webkit-animation:fade-in 15s ease-in forwards;*/
-    /*  animation:fade-in 15s ease-in forwards;*/
-    /*  transform:translateY(100%);*/
-    /*  margin-top: 0%;*/
-    /*  }*/
-      
+  
     .intro {
       margin-bottom: 4%;
+    }
+
+  @media (max-width: 768px) {
+   
+      
+    .intro {
+      font-size: 14px;
+    }
+    .intro span{
+      font-size: 10px;
     }
   }
     .social-media-list a{

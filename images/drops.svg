@@ -1,0 +1,13 @@
+<?xml version="1.0"?><svg width="7.4409448819" height="10.523622047" xmlns="http://www.w3.org/2000/svg">
+
+ <metadata id="metadata3380">image/svg+xml</metadata>
+ <g>
+  <title>Layer 1</title>
+  <g id="layer1">
+   <path fill="#00ffff" fill-rule="evenodd" stroke="#000000" stroke-width="5.115381" stroke-linejoin="round" marker-start="none" marker-mid="none" marker-end="none" stroke-miterlimit="4" stroke-dashoffset="0" id="path3557" d="m393.24054,368.225586c-28.174011,107.691132 -80.224335,127.126923 -80.224335,193.843994c0,43.538086 41.154449,67.69165 80.224335,67.69165c31.848694,0 65.898499,-31.248901 65.898499,-70.768433c0,-62.281647 -38.918274,-76.409393 -65.898499,-190.767212z"/>
+  </g>
+  <path id="svg_1" d="m404.738739,557.46991c0,-14.08844 9.397736,-25.5 20.999969,-25.5c11.602203,0 21,11.41156 21,25.5c0,14.088318 -9.397797,25.5 -21,25.5c-11.602234,0 -20.999969,-11.411682 -20.999969,-25.5z" stroke-width="0" stroke="#000000" fill="#aaffd4"/>
+  <line id="svg_2" y2="438.971191" x2="9.738861" y1="438.971191" x1="8.738861" stroke="#000000" fill="none"/>
+  <polyline id="svg_8" points="520.905517578125,488.6378173828125 519.905517578125,488.6378173828125 519.905517578125,488.6378173828125 " stroke-linecap="round" stroke="#000000" fill="none"/>
+ </g>
+</svg>
